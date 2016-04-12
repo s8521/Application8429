@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Application8429</string>
     <string name="action_settings">Settings</string>
+    <string name="placename">請選擇</string>
+    <string-array name="place">
+        <item> 手 </item>
+        <item> 腳 </item>
+        <item> 頭 </item>
+    </string-array>
 </resources>
