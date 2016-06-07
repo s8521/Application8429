@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.sakusai.application8429.home"
-    android:background="#debbfa">
+    android:background="#debbfa"
+    android:clickable="false">
 
     <Button
         android:layout_width="wrap_content"
@@ -30,10 +31,11 @@
         android:textSize="16dp"
         android:background="#fbdf60"
         android:textColor="#050404"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button2"
         android:layout_toRightOf="@+id/button2"
         android:layout_toEndOf="@+id/button2"
-        android:layout_marginBottom="179dp" />
+        android:layout_marginTop="79dp"
+        android:onClick="tosearch" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,8 +47,8 @@
         android:layout_alignBottom="@+id/button3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
@@ -56,8 +58,10 @@
         android:textSize="16dp"
         android:textColor="#070606"
         android:background="#abfb7d"
-        android:layout_above="@+id/button5"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="toPhoto" />
 
     <Button
         android:layout_width="wrap_content"
@@ -66,23 +70,26 @@
         android:id="@+id/button5"
         android:textSize="16dp"
         android:textColor="#070606"
-        android:background="#fe7671"
-        android:layout_marginBottom="50dp"
-        android:layout_alignParentBottom="true"
+        android:background="#ee403a"
+        android:layout_below="@+id/button4"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:onClick="toknowledge" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="分析"
+        android:text="歷程"
         android:id="@+id/button6"
         android:textSize="16dp"
         android:textColor="#070606"
         android:background="#96e7fa"
-        android:layout_below="@+id/button4"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/button17"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="tocourse" />
 
     <Button
         android:layout_width="wrap_content"
@@ -92,6 +99,20 @@
         android:textSize="16dp"
         android:textColor="#040404"
         android:background="#abfb7d"
-        android:layout_below="@+id/button6"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/button17"
+        android:layout_alignLeft="@+id/button17"
+        android:layout_alignStart="@+id/button17"
+        android:layout_marginTop="27dp"
+        android:onClick="toKagehen" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="紀錄"
+        android:id="@+id/button17"
+        android:textColor="#070606"
+        android:background="#bd9ea1"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
 </RelativeLayout>
