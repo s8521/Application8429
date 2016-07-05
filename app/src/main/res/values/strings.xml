@@ -31,4 +31,19 @@
         <item> 下肢之腳踝運動：腳踝伸展 </item>
         <item> 下肢之腳趾運動：腳趾向內向外伸展 </item>
     </string-array>
+
+    <string-array name="vdieoaddress">
+        <item>https://www.youtube.com/embed/E3f0V0jsZ8E</item>
+        <item>https://www.youtube.com/embed/Ufm1BI_rd3s</item>
+        <item>https://www.youtube.com/embed/N8D3DYBpukQ</item>
+        <item>https://www.youtube.com/embed/GWjn5hP9fu4</item>
+        <item>https://www.youtube.com/embed/Ls2qu2XTC4k</item>
+        <item>https://www.youtube.com/embed/XfmrnIk9PiI</item>
+        <item>https://www.youtube.com/embed/vMyJDWjRQZg</item>
+        <item>https://www.youtube.com/embed/GFF5DIeT9gg</item>
+        <item>https://www.youtube.com/embed/OXwrgC76bFo</item>
+        <item>https://www.youtube.com/embed/85ToHR7m9bo</item>
+        <item>https://www.youtube.com/embed/lXSfb6KiB5I</item>
+        <item>https://www.youtube.com/embed/RryKRH9dRBY</item>
+    </string-array>
 </resources>
