@@ -13,9 +13,9 @@ public class course extends AppCompatActivity {
         setContentView(R.layout.activity_course);
     }
 
-    public void tocoursetime(View v){
-        Intent intent = new Intent();
-        intent.setClass(course.this , coursetime.class);
-        startActivity(intent);
-    }
+//    public void tocoursetime(View v){
+//        Intent intent = new Intent();
+//        intent.setClass(course.this , coursetime.class);
+//        startActivity(intent);
+//    }
 }
