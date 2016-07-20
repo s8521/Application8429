@@ -31,6 +31,10 @@ public class Courseresults extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courseresults);
+
+        Bundle bundle = this.getIntent().getExtras();
+        String text=  bundle.getString("ac");
+
         li = (LinearLayout) findViewById(R.id.li);
         initview();
     }

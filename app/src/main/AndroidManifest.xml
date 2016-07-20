@@ -31,7 +31,7 @@
         <activity android:name=".Photocomparison" />
         <activity android:name=".Photo" />
         <activity android:name=".search" />
-        <activity android:name=".coursetime" />
+        <activity android:name=".coursephoto" />
         <activity android:name=".Kagehen" />
         <activity android:name=".Kagehentwo"></activity>
     </application>
