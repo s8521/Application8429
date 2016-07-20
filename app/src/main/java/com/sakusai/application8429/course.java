@@ -15,7 +15,7 @@ public class course extends AppCompatActivity {
 
     public void tocoursetime(View v){
         Intent intent = new Intent();
-        intent.setClass(course.this , coursetime.class);
+        intent.setClass(course.this , coursephoto.class);
         startActivity(intent);
     }
 }
