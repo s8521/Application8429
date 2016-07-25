@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".coursephoto"
+    android:background="#debbfa">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="填寫復健項目次數"
+        android:id="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="toCourseresults" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:minHeight="900dp"
+        android:minWidth="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_below="@+id/button"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="598dp"
+                android:layout_alignBaseline="@+id/textView15"
+                android:layout_alignBottom="@+id/textView15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之肩部動作：旋轉"
+                    android:id="@+id/textView18"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之肩部動作：拉背"
+                    android:id="@+id/textView20"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView18"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之肩部動作：繞圈運動"
+                    android:id="@+id/textView22"
+                    android:layout_below="@+id/textView20"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之腕部運動：腕關節"
+                    android:id="@+id/textView24"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView22"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之手部運動：指關節"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之手部運動：大拇指"
+                    android:id="@+id/textView28"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView26"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="下肢之髖關節運動：彎曲和伸直"
+                    android:id="@+id/textView30"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView28"
+                    android:layout_toLeftOf="@+id/editText8"
+                    android:layout_toStartOf="@+id/editText8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="下肢之髖關節運動：外展和內收"
+                    android:id="@+id/textView34"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView23"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="下肢之髖關節運動：旋轉"
+                    android:id="@+id/textView23"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView30"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText17"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignTop="@+id/textView18"
+                    android:layout_alignLeft="@+id/editText13"
+                    android:layout_alignStart="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView25"
+                    android:layout_above="@+id/textView20"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText18"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_above="@+id/textView22"
+                    android:layout_alignLeft="@+id/editText17"
+                    android:layout_alignStart="@+id/editText17" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView27"
+                    android:layout_alignBottom="@+id/editText18"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText19"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignBottom="@+id/textView22"
+                    android:layout_alignLeft="@+id/editText18"
+                    android:layout_alignStart="@+id/editText18" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText20"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignBottom="@+id/textView24"
+                    android:layout_alignLeft="@+id/editText19"
+                    android:layout_alignStart="@+id/editText19" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText21"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignBottom="@+id/textView26"
+                    android:layout_alignLeft="@+id/editText20"
+                    android:layout_alignStart="@+id/editText20" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText22"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_above="@+id/textView30"
+                    android:layout_alignLeft="@+id/editText21"
+                    android:layout_alignStart="@+id/editText21" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText23"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignTop="@+id/textView37"
+                    android:layout_toLeftOf="@+id/textView37"
+                    android:layout_toStartOf="@+id/textView37" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText24"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_above="@+id/textView34"
+                    android:layout_alignLeft="@+id/editText22"
+                    android:layout_alignStart="@+id/editText22" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText25"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignTop="@+id/textView34"
+                    android:layout_toLeftOf="@+id/textView39"
+                    android:layout_toStartOf="@+id/textView39" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView29"
+                    android:layout_above="@+id/textView24"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView32"
+                    android:layout_alignBottom="@+id/editText20"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView33"
+                    android:layout_alignBottom="@+id/editText21"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView35"
+                    android:layout_alignBottom="@+id/editText22"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView37"
+                    android:layout_above="@+id/textView23"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView38"
+                    android:layout_above="@+id/textView34"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView39"
+                    android:layout_alignTop="@+id/editText25"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText13"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textView19"
+                    android:layout_toStartOf="@+id/textView19" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上肢之肩部動作：上舉"
+                    android:id="@+id/textView16"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView19"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="下肢之腳踝運動：腳踝伸展"
+                    android:id="@+id/textView17"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView34"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="下肢之腳趾運動：腳趾向內向外伸展"
+                    android:id="@+id/textView21"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView17"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText8"
+                    android:layout_marginTop="22dp"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_below="@+id/textView34"
+                    android:layout_toRightOf="@+id/textView34"
+                    android:layout_toEndOf="@+id/textView34" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editText9"
+                    android:layout_marginTop="22dp"
+                    android:autoText="true"
+                    android:background="#f84747"
+                    android:width="40dp"
+                    android:layout_below="@+id/editText8"
+                    android:layout_toRightOf="@+id/textView21"
+                    android:layout_toEndOf="@+id/textView21" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView31"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView39"
+                    android:layout_toRightOf="@+id/editText13"
+                    android:layout_toEndOf="@+id/editText13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="次/天"
+                    android:id="@+id/textView40"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@+id/textView31"
+                    android:layout_toRightOf="@+id/editText9"
+                    android:layout_toEndOf="@+id/editText9" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
