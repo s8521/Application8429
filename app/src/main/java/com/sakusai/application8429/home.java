@@ -51,11 +51,11 @@ public class home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void toknowledge(View v){
-        Intent intent = new Intent();
-        intent.setClass(home.this , knowledge.class);
-        startActivity(intent);    //觸發換頁
-    }
+//    public void toknowledge(View v){
+//        Intent intent = new Intent();
+//        intent.setClass(home.this , knowledge.class);
+//        startActivity(intent);    //觸發換頁
+//    }
 
     public void toPhoto(View v){
         Intent intent = new Intent();
