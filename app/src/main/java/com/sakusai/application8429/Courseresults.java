@@ -26,14 +26,14 @@ import java.util.List;
 public class Courseresults extends AppCompatActivity {
 
     LinearLayout li;
-
+    int text;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courseresults);
 
         Bundle bundle = this.getIntent().getExtras();
-        String text=  bundle.getString("ac");
+        text=  bundle.getInt("ac");
 
         li = (LinearLayout) findViewById(R.id.li);
         initview();
@@ -44,7 +44,7 @@ public class Courseresults extends AppCompatActivity {
         List<double[]> x = new ArrayList<double[]>(); // 點的x坐標
         List<double[]> y = new ArrayList<double[]>(); // 點的y坐標
         // 數值X,Y坐標值輸入
-        x.add(new double[] { 1, 3, 5, 7, 9, 11 });
+        x.add(new double[] { text, 3, 5, 7, 9, 11 });
         x.add(new double[] { 0, 2, 4, 6, 8, 10 });
         y.add(new double[] { 3, 14, 8, 22, 16, 18 });
         y.add(new double[] { 20, 18, 15, 12, 10, 8 });
